@@ -22,13 +22,7 @@ namespace nutest {
 	public ref class Form1 : public System::Windows::Forms::Form
 	{
 	public:
-		Form1(void)
-		{
-			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
-		}
+		Form1(void);
 
 	protected:
 		/// <summary>
@@ -55,12 +49,20 @@ namespace nutest {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = gcnew System::ComponentModel::Container();
-			this->Size = System::Drawing::Size(300,300);
-			this->Text = L"Form1";
-			this->Padding = System::Windows::Forms::Padding(0);
+			this->SuspendLayout();
+			// 
+			// Form1
+			// 
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 12);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->ClientSize = System::Drawing::Size(620, 490);
+			this->Name = L"Form1";
+			this->Text = L"Form1";
+			this->ResumeLayout(false);
+
 		}
+
+		CefSharp::WinForms::ChromiumWebBrowser^ brow_;
 #pragma endregion
 	};
 }

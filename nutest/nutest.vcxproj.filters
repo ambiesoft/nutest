@@ -24,6 +24,9 @@
     <ClCompile Include="nutest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Form1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Form1.h">
@@ -45,5 +48,8 @@
     <ResourceCompile Include="app.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
